@@ -34,9 +34,9 @@
     </nav>
 
     <div class="container">
+      <h1>Find Github Users and Repositories <button class="btn btn-info" onclick="myWebsite()">View Developer Website</button></h1>
 
       <div class="searchContainer">
-        <h1>Find Github Users and Repositories <a href="www.mayanovarini.com" target="_blank" class="btn btn-info">Visit Developer Website</a></h1>
         <p class="lead">Enter a username to fetch a users profile info and repos</p>
         <input type="text" id="searchUser" class="form-control" placeholder="type Github username">
       </div>
@@ -51,5 +51,10 @@
   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function myWebsite() {
+          window.open("www.mayanovarini.com");
+      }
+    </script>
   </body>
 </html>

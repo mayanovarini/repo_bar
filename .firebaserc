@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "repo-bar"
+    "default": "repo-bar",
+    "repo": "repobar-4f038"
   }
 }
