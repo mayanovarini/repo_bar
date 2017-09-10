@@ -17,7 +17,7 @@ $(document).ready(function(){
           client_id:'b3f55fb4b00d5a18030a',
           client_secret:'3c084d7aa98e55d062148e4e55cffc4b1a742549',
           sort:'created_at: asc',
-          per_page: 10
+          per_page: 6
         }
       }).done(function(repos){
         $.each(repos, function(index, repo){
@@ -70,6 +70,7 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
+
         <h3 class="page-header">Latest Repositories</h3>
         <div id="repos"></div>
       `);
