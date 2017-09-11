@@ -95,4 +95,4 @@ https://repobar-4f038.firebaseapp.com/
 
 [Maya Novarini](https://github.com/thegirlfromipanema?tab=repositories)
 
-Visit me my [portfolio](http://mayanovarini.com)
+Visit my [portfolio](http://mayanovarini.com)
