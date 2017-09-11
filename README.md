@@ -13,7 +13,7 @@ git init
 Firebase project created from the Firebase console at https://console.firebase.google.com/
 
 
-### Clone and Deploy
+### Cloning and Deployment
 
 On your local directory, clone the repo bar repository by running :
 
@@ -67,13 +67,17 @@ firebase serve
 
 ```
 
-### Coding style
+### Technical Rationale
 
-Due to the small size of the project and the main and only js file, I put the html code in there too.
+- Due to the small size of the project and the main and only js file, I put the html code in there too.
 This can not be justifiable if the project is bigger.
 
+- For relevancy and brevity, I only retrieve some information from the user (user name, name, website/blog, location, date of user registration on Github, biography) and limit up to 6 latest repositories to display.
 
-## Deployment
+
+## Host
+
+Visit the deployed project here :
 
 https://repobar-4f038.firebaseapp.com/
 
@@ -86,3 +90,9 @@ https://repobar-4f038.firebaseapp.com/
 ## Versioning
 
 1.0.0
+
+## Developer
+
+[Maya Novarini](https://github.com/thegirlfromipanema?tab=repositories)
+
+Visit me my [portfolio](http://mayanovarini.com)
