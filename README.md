@@ -28,9 +28,14 @@ firebase init
 ```
 
 Firebase will prompt some questions :
+```
 ? What Firebase do you want to use? <choose your Firebase project>
+```
 
+```
 ? What directory should be the public root?
+```
+
 type :
 ```
 public
