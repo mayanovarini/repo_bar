@@ -40,6 +40,9 @@ $(document).ready(function(){
           `);
         });
       });
+
+      let created_at = new Date(user.created_at);
+
       $('#profile').html(`
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -59,11 +62,11 @@ $(document).ready(function(){
                 <br><br>
 
                 <ul class="list-group">
-                  <li class="list-group-item">Website: ${user.blog}</li>
-                  <li class="list-group-item">Location: ${user.location}</li>
-                  <li class="list-group-item">Member Since: ${user.created_at}</li>
-                  <li class="list-group-item">Hireable: ${user.hireable}</li>
-                  <li class="list-group-item">Bio: ${user.bio}</li>
+                  <li id="website" class="list-group-item">Website: ${user.blog}</li>
+                  <li id="location" class="list-group-item">Location: ${user.location}</li>
+                  <li class="list-group-item">Member Since: ${created_at.toDateString()}</li>
+                  <li id="hire" class="list-group-item">Hireable: ${user.hireable}</li>
+                  <li id="bio" class="list-group-item">Bio: ${user.bio}</li>
 
                 </ul>
               </div>
@@ -74,6 +77,19 @@ $(document).ready(function(){
         <h3 class="page-header">Latest Repositories</h3>
         <div id="repos"></div>
       `);
+
+      if (!user.blog) {
+        $('#website').hide();
+      }
+      if (!user.location) {
+        $('#location').hide();
+      }
+      if (!user.hireable) {
+        $('#hire').hide();
+      }
+      if (!user.bio) {
+        $('#bio').hide();
+      }
     });
   });
 });
